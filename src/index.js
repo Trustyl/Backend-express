@@ -11,9 +11,17 @@ const handleAboutRequest = (request, response) => {
 const handleSettingsRequest = (request, response) => {
     response.send("<h1>This is your Settings page</h1>");
 };
+const handleBlogRequest = (request, response) => {
+    response.send("<h1>This is your Blog page</h1>");
+};
+const handleSocialRequest = (request, response) => {
+    response.send("<h1>This is your Social page</h1>");
+};
 
 server.use("/about", handleAboutRequest);
 server.use("/settings", handleSettingsRequest);
+server.use("/Social", handleSocialRequest);
+server.use("/Blog", handleBlogRequest);
 server.use("/", handleHomeRequest);
 
 server.listen(3000, () => console.log("server running on port 3000"));
