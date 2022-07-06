@@ -1,1 +1,4 @@
 # Backend-express
+/Settings
+/About 
+/
